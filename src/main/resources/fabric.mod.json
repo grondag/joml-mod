@@ -1,36 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "joml-mod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "JOML Mod",
+  "description": "JOML repackaged as a Fabric mod for easy inclusion.",
   "authors": [
-    "Me!"
+    "JOML", "Grondag"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/grondag/joml-mod",
+    "sources": "https://github.com/grondag/joml-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/joml-mod/joml-mod-icon.png",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
-  },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+  "environment": "client",
 
   "depends": {
     "fabricloader": ">=0.4.0",
     "fabric": "*"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }
