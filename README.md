@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-  modImplementation "grondag:joml-mod:1.0+"
-  include "grondag:joml-mod:1.0+"
+  modImplementation "grondag:joml-mod:1.2+"
+  include "grondag:joml-mod:1.2+"
 }
 ```
