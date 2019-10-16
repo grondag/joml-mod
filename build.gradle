@@ -34,7 +34,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
 	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
 	
-	shadow "org.joml:joml:1.9.17"
+	shadow "org.joml:joml:1.9.19"
 }
 
 task jar(type: Jar, overwrite: true) {
