@@ -18,9 +18,9 @@ if (grgit == null) {
 	version = '99.0.0-nogit'
 } else if (project.hasProperty(version_tag)) {
 	if(grgit.status().isClean()) {
-		version = project.getProperty(version_tag) + '.' + grgit.log().size() + '+' + project.minecraft_version
+		version = project.getProperty(version_tag) + '.' + grgit.log().size()
 	} else {
-		version = project.getProperty(version_tag) + '.' + (grgit.log().size() + 1) + '-snapshot+' + project.minecraft_version
+		version = project.getProperty(version_tag) + '.' + (grgit.log().size() + 1) + '-snapshot+'
 	}
 } else {
 	version = '99.0.0-local'
@@ -34,7 +34,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
 	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
 	
-	shadow "org.joml:joml:1.9.17"
+	shadow "org.joml:joml:1.9.19"
 }
 
 task jar(type: Jar, overwrite: true) {
